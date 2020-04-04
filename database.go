@@ -7,10 +7,13 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-func adduser() {
+func adduser(Rno string, name string) {
 	database, _ := sql.Open("sqlite3", "./nraboy.db")
 	statement, _ := database.Prepare("CREATE TABLE IF NOT EXISTS register (RNo TEXT, Name TEXT, date TEXT)")
 	statement.Exec()
+	statement, _ = database.Prepare("INSERT INTO register (Rno, Name, date) VALUES (?, ?, ?)")
+	var time string
+	statement.Exec(Rno, name, time)
 
 }
 
