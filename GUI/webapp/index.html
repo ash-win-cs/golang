@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="./static/js/index.js"></script>
+</head>
+<body>
+<div class="center">
+    <h1>Hello World!! <br> This is a Graphical User Interface created using Golang!!</h1>
+</div>
+<section>
+<form action="{{ url_for('predict')}}" method="post">
+        <div class="center">
+            <input class="form-control" type="text" name="Field 1" placeholder="Field 1" required="required" style="width:400px">
+        </div>
+        <br>
+	<div class="center">
+            <input class="form-control" type="text" name="Field 1" placeholder="Field 1" required="required" style="width:400px">
+        </div>
+	<br>
+	<br>
+        <div class="center">
+            <button type="submit" class="btn btn-primary btn-block btn-large" style="width:400px">Submit</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

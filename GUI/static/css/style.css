@@ -1,0 +1,27 @@
+body{
+  background-color: black !important;
+  margin: 100px !important;
+}
+
+.login{
+    align-self: center;
+}
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+color: whitesmoke !important;
+}
+.center{
+    align-self: center;
+    margin: auto;
+    width: 500px;
+    padding-top: 30px;
+}
+
+.center1{
+    align-self: center;
+    margin: auto;
+    width: 500px;
+    padding-top: 30px;
+}
