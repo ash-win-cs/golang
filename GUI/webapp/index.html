@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <script type="text/javascript" src="./static/js/index.js"></script>
 </head>
 <body>
-<div class="center">
-    <h1>Hello World!! <br> This is a Graphical User Interface created using Golang!!</h1>
-</div>
-<section>
-<form action="{{ url_for('predict')}}" method="post">
-        <div class="center">
-            <input class="form-control" type="text" name="Field 1" placeholder="Field 1" required="required" style="width:400px">
-        </div>
-        <br>
-	<div class="center">
-            <input class="form-control" type="text" name="Field 1" placeholder="Field 1" required="required" style="width:400px">
-        </div>
-	<br>
-	<br>
-        <div class="center">
-            <button type="submit" class="btn btn-primary btn-block btn-large" style="width:400px">Submit</button>
-        </div>
-    </form>
-</section>
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">College ID</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eg : NSS17EC036">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <small id="passwordlHelp" class="form-text text-muted">date of birth</small>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check to agree with terms and conditions.</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+
 </body>
 </html>
